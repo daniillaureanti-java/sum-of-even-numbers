@@ -9,9 +9,15 @@ public class SumOfEvenNumbers {
     }
 
     public static int sum(int[] array){
-
-        //put your code here
-
-        throw new UnsupportedOperationException();
+        int sum = 0;
+        if (array != null){
+            for (int index = 0; index < array.length; index++) {
+                if (array[index] % 2 == 0) {
+                    sum += array[index];
+                }
+            }
+        }
+        return sum;
     }
+
 }
